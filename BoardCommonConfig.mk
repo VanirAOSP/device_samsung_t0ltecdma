@@ -23,9 +23,8 @@
 LOCAL_PATH := device/samsung/t0ltecdma
 
 # Kernel
-LOCAL_KERNEL := device/samsung/t0ltecdma/kernel
-PRODUCT_COPY_FILES := \
-  $(LOCAL_KERNEL):kernel 
+TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
+TARGET_KERNEL_CONFIG := cyanogenmod_t0ltecdma_defconfig
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
